@@ -73,6 +73,7 @@
 
     });
 
+    // c3 css styles
     freeboard.addStyle('.c3 svg', "font: 10px sans-serif;");
     freeboard.addStyle('.c3 path, .c3 line', "fill: none; stroke: #000;");
     freeboard.addStyle('.c3 text', "-webkit-user-select: none; -moz-user-select: none; user-select: none;");
@@ -110,6 +111,10 @@
     freeboard.addStyle('.c3-chart-arcs .c3-chart-arcs-gauge-max', "fill: #777;");
     freeboard.addStyle('.c3-chart-arcs .c3-chart-arcs-gauge-min', "fill: #777;");
     freeboard.addStyle('.c3-chart-arc .c3-gauge-value', "fill: #000;");
+
+    // freeboard customised styles
+    freeboard.addStyle('.c3 text', "fill: #d3d4d4");
+    freeboard.addStyle('.c3 path.domain, .c3 .tick line', "stroke: #d3d4d4;");
 
     var freeboardC3Widget = function(settings) {
         var self = this;
